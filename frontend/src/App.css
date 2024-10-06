@@ -1,0 +1,27 @@
+/* Ensures the root and body take full height */
+html, body, #root, .container {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Make the container a flexbox with column direction */
+  .container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Full viewport height */
+  }
+  
+  /* Ensure the main content grows, pushing the footer down */
+  .container .content {
+    flex-grow: 1;
+  }
+  
+  /* Optional: for styling the footer */
+  footer {
+    border-top: 1px solid #ccc;
+    background-color: #f8f8f8;
+    padding: 20px;
+    text-align: center;
+  }
+  
