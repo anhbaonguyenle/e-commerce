@@ -16,7 +16,7 @@ const Navbar = ({theme, setTheme}) => {
   }
   return (
     <div className='navbar'>
-        <img src={theme == 'light' ? logo_light : logo_dark} alt="" className='logo'/>
+        <img src={theme == 'light' ? logo_light : logo_dark} alt="Logo of a webstie" className='logo'/>
         <ul>
             <li><a href='/'>Home</a></li>
             <li><a href='/Products'>Products</a></li>
@@ -25,15 +25,15 @@ const Navbar = ({theme, setTheme}) => {
         </ul>
         <div className='search-box'>
             <input type='text' placeholder='Search...'/>
-            <img src={theme == 'light' ? search_icon_light : search_icon_dark } alt="" className='search-icon'/>
+            <img src={theme == 'light' ? search_icon_light : search_icon_dark } alt="icon" className='search-icon'/>
         </div>
         <div className='cart'>
-            <img src={theme == 'light' ? cart_icon_dark : cart_icon_light} alt="" className='cart-icon'/>
+            <img src={theme == 'light' ? cart_icon_dark : cart_icon_light} alt="cart icon" className='cart-icon'/>
         </div>
         <div className='user'>
-            <img src={theme == 'light' ? user_icon_dark : user_icon_light} alt="" className='user-icon'/>
+            <img src={theme == 'light' ? user_icon_dark : user_icon_light} alt="user icon" className='user-icon'/>
         </div>
-        <img onClick={()=>{toggle_mode()}} src={theme == 'light' ? toogle_light : toogle_dark} alt="" className='toggle-icon'/>
+        <img onClick={()=>{toggle_mode()}} src={theme == 'light' ? toogle_light : toogle_dark} alt="togglee icon" className='toggle-icon'/>
     </div>
   )
 }
