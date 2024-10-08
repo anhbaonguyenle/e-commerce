@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Hero from './components/Hero/Hero';
-
+import About from './pages/About/About';
 function App() {
   const currentTheme = localStorage.getItem('currentTheme');
   const [theme, setTheme] = useState(currentTheme ? currentTheme : 'light');
@@ -23,7 +23,7 @@ function App() {
             <Route path="/" element={<h1>Home</h1>} />
             <Route path="/Products" element={<h1>Products</h1>} />
             <Route path="/Galleries" element={<h1>Galleries</h1>} />
-            <Route path="/About" element={<h1>About</h1>} />
+            <Route path="/About" element={<About />} />
           </Routes>
         </div>
         <Footer theme={theme} />

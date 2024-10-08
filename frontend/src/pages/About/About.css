@@ -1,0 +1,16 @@
+
+.About {
+    padding: 20px;
+    font-size: 18px;
+  }
+  
+.light .About {
+    background-color: white;
+    color: black;
+  }
+  
+  .dark .About {
+    background-color: #333;
+    color: white;
+  }
+  
